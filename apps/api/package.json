@@ -1,0 +1,40 @@
+{
+  "name": "@mamalones/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/main.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@sentry/node": "^11.4.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "latest",
+    "dotenv": "^18.0.4",
+    "express": "latest",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "latest",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.0",
+    "pino": "^10.3.1",
+    "pino-http": "latest",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "latest",
+    "@types/pg": "^8.23.1",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.0",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vitest": "^5.0.2"
+  }
+}
